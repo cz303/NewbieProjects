@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<table width="0" border="0" cellspacing="2" cellpadding="5" align="center">
+  <tbody>
+	   </tr>
+    <tr>
+	
+      <td><div align="center"><img src="img/EduMobile.png" ></div></td>
+	  <td>
+	   <p>Мы предоставляем возможность доступа к нашему хранилищу материалов из мобильного устройства.<br>
+	   Для этого вам требуется: 
+	   <ul type="decimal">
+	   <li><a href='regform.php' onclick="return hs.htmlExpand(this, 
+				{ objectType: 'iframe', width:470,height:600, headingText:'Форма регистрации'} )">Зарегистрироваться</a> на сайте </li>
+	   <li>Скачать наше приложение: <a href="/app-debug-ita109.apk" target="_blank">Android</a></li>
+	   </ul>
+	   </p>
+       Данное приложение позволяет:
+		<dd>
+		Авторизация в системе<br>
+		Просмотр материалов по категориям<br>
+		Просмотр детальной информации<br>
+		Просмотр материалов по интересам<br>
+		Скачивание материалов на устройство<br>
+		Просмотр скаченный материалов в offline режиме<br>
+		</dd>
+	  <td><div align="center"><img src="img/Cloud-Computing-Education.png" ></div></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<table width="0" border="0" cellspacing="2" cellpadding="5" align="center">
+  <tbody>
+	   </tr>
+    <tr>
+	<td>  <p>На данный момент сайт работает в тестовом режиме.</p>
+       <p>Приходите ещё, мы будем рады вас видеть!</p>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front of kitties</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+
+    <div id="grid">
+        <header>
+            <h1>Наши котятки</h1>
+        </header>
+
+        <div style="top:50px" class="nav" id="home">Домашние</div>
+        <div style="top:105px" class="nav" id="wild">Дикие</div>
+        <div style="top:160px" class="nav" id="other">Прочее</div>
+        <div style="top:210px" class="nav" id="exotic">Экзотические</div>
+        <div class="nav_bg"></div>
+
+        <aside>
+            <p>Рейтинг</p>
+            <div class="rating">
+                <label for="order">По убыванию</label>
+                <input type="checkbox" id="order">
+
+                <ul class="rating_list order_1">
+                    <li class="list">
+                        <span class="caption">Домашние</span>
+                        <span class="gradient" ></span>
+                        <span class="count">3</span>
+                    </li>
+                    <li class="list order_2">
+                        <span class="caption">Дикие</span>
+                        <span class="gradient"></span>
+                        <span class="count">1</span>
+                    </li>
+                    <li class="list order_3">
+                        <span class="caption">Прочие</span>
+                        <span class="gradient"></span>
+                        <span class="count">3</span>
+                    </li>
+                    <li class="list order_4">
+                        <span class="caption">Экзотические</span>
+                        <span class="gradient"></span>
+                        <span class="count">2</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main id="img_grid">
+            <figure class="wild" data-name="Котик 1">
+                <img src="./imgs/1.jpg" alt=""  /></figure>
+            <figure class="home" data-name="Котик 2" >
+                <img src="./imgs/2.jpeg" alt="" /></figure>
+            <figure class="exotic" data-name="Котик 3">
+                <img src="./imgs/3.jpg" alt=""  /></figure>
+            <figure class="home" data-name="Котик 4" >
+                <img src="./imgs/4.jpg" alt=""/></figure>
+            <figure class="other" data-name="Котик 5">
+                <img src="./imgs/5.jpg" alt=""></figure>
+            <figure class="exotic" data-name="Котик 6">
+                <img src="./imgs/6.jpg" alt=""></figure>
+            <figure class="other wild" data-name="Котик 7">
+                <img src="./imgs/7.jpg" alt=""></figure>
+            <figure class="home" data-name="Котик 8">
+                <img src="./imgs/8.jpg" alt=""></figure>
+            <figure class="home" data-name="Котик 9">
+                <img src="./imgs/9.jpg" alt=""></figure>
+            <figure class="other" data-name="Котик 10">
+                <img src="./imgs/10.jpg" alt=""> </figure>
+        </main>
+        <footer>
+            <span>&copy; &laquo;ООО &star;&star;&star;&raquo;</span>
+            <span style="color:blue;">Наш адрес: улица Котовая, д.5</span>
+        </footer>
+    </div>
+</body>
+
+</html>

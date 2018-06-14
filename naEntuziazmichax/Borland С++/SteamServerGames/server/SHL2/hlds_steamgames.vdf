@@ -1,0 +1,46 @@
+// The format in these blocks mimic the stuff in gameinfo.txt that the dedicated server looks for.
+// The only addition is "gamedir", which the dedicated server uses as a unique ID for the game.
+hlds_steamgames
+{
+	"1"
+	{
+		"gamedir"				"cstrike"
+
+		Game					"Counter-Strike: Source"
+		DedicatedServerStartMap	"de_dust"
+		type					multiplayer_only
+		
+		FileSystem
+		{
+			SteamAppId			240
+		}
+	}
+	
+	"2"
+	{
+		"gamedir"				"hl2mp"
+
+		Game					"Half-Life 2: Deathmatch"
+		DedicatedServerStartMap	"dm_lockdown"
+		type					multiplayer_only
+		
+		FileSystem
+		{
+			SteamAppId			320
+		}
+	}
+
+	"3"
+	{
+		"gamedir"				"dod"
+
+		Game					"Day of Defeat: Source"
+		DedicatedServerStartMap	"dod_flash"
+		type					multiplayer_only
+		
+		FileSystem
+		{
+			SteamAppId			300
+		}
+	}
+}

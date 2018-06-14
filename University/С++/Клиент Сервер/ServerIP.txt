@@ -1,0 +1,2 @@
+127.0.0.1:666
+bzteam.game-host.org:666

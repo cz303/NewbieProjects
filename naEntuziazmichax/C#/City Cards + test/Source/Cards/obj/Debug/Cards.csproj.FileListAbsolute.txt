@@ -1,0 +1,7 @@
+D:\temp2\Cards\Cards\bin\Debug\Cards.exe.config
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Debug\Cards.exe.config
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Debug\Cards.exe
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Debug\Cards.pdb
+D:\temp2\Programing\CSHARP\City Cards\Cards\obj\Debug\Cards.csprojResolveAssemblyReference.cache
+D:\temp2\Programing\CSHARP\City Cards\Cards\obj\Debug\Cards.exe
+D:\temp2\Programing\CSHARP\City Cards\Cards\obj\Debug\Cards.pdb

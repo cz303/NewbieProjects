@@ -1,0 +1,102 @@
+hostname The name of the server.
+sv_password Set server password. Leave blank to disable.
+mp_friendlyfire <0/1>  Turn on/off friendlyfire. Default: Off
+mp_footsteps <0/1>  Turn on/off footsteps. Default: On
+mp_autoteambalance <0/1>  Force clients to auto-join the opposite team if they are not balanced. Default: On
+mp_autokick <0/1>  Kick idle/team-killing players. Default Off
+mp_flashlight <0/1>  Turn on/off the ability for clients to use flashlight. Default: Off
+mp_tkpunish <0/1>  Punish TK'ers on next round? Default: On
+mp_forcecamera <0/1>  Force dead players to first person mode, effectively disabling freelook. Default: Off
+sv_alltalk <0/1>  Players can hear all other players, no team restrictions. Default: Off
+sv_pausable <0/1>  Can the server be paused Default: 0
+sv_consistency <0/1>  Force cleints to pass consistency check for critical files before joining server? Default: 0
+sv_cheats <0/1>  Allow cheats on server. Default: 0
+sv_gravity <0/1>  World Gravity Default: 800
+sv_maxvelocity  Maximum speed any ballistically moving object is allowed to attain per axis. Default: 3500
+sv_unlag <0/1>  Enables player lag compensation. Default: 1
+sv_voicecodec  Specifies which voice codec DLL to use in a game. Set to the name of the DLL without the extension.. Default: vaudio_miles
+sv_hltv <0/1>  Enables HLTV on the server. Default: 0
+sv_allowupload <0/1>  Allow clients to upload their custom decals to the server. Default: 1
+sv_allowdownload <0/1>  Allow clients to downnload files. Default: 1
+sv_maxspeed Maximum speed a player can move. Default: 320
+mp_limitteams <0-20> Max # of players 1 team can have over another. Default: 2
+mp_hostagepenalty <##> How many hostages a Terrorist can kill before being kicked, 0 to disable. Default: 5
+sv_voiceenable <0/1>  Allow clients to use mic. Default: 1
+mp_allowspectators <0/1>  Allow spectators on the server. Default: 1
+mp_chattime <0-120> amount of time in seconds players can chat after the game is over. Lower value = faster map load change. Default: 10
+sv_timeout <##>  After this many seconds without a message from a client, the client is dropped. Default: 65
+
+Rcon Cvars
+rcon_password Set rcon passsword. Leave blank to disable rcon
+sv_rcon_banpenalty <mins>  Number of minutes to ban users who fail rcon authentication. Default: 0
+sv_rcon_maxfailures <0-20>  Max number of times a user can fail rcon authentication before being banned. Default: 10
+sv_rcon_minfailures <0-20>  Number of times a user can fail rcon authentication in sv_rcon_minfailuretime before being banned. Default: 5
+sv_rcon_minfailuretime <1-seconds>  Number of seconds to track failed rcon authentications. Default: 30
+Round Cvars
+mp_freezetime <0-60> Time in seconds to keep players frozen when the round starts. Default: 6
+mp_roundtime <1-9> How much time in minutes does a round last. Default: 5
+mp_startmoney <800-16000> Amount of money each player gets when they reset (16000 max) Default: 800
+mp_c4timer <10-90> The amount of time in seconds before bomb explodes after planted. Default: 45
+mp_fraglimit <##> Amount of frags a player can exceed before changing maps. Default: 0
+mp_maxrounds <##> Amount of round to play before server changes maps. Default: 0
+mp_winlimit <0-20> Max number of rounds one team can win before server changes maps. Default: 0
+mp_playerid <0/1/2>  Controls what information player see in the status bar: 0 all names; 1 team names; 2 no names. Default: 0
+mp_spawnprotectiontime Time in seconds to Kick players who team-kill after round restart. Default: 5
+Bandwidth Rates
+sv_minrate <0-25000> Min bandwidth rate allowed on server. Default: 0 (unlimited)
+sv_maxrate <0-25000> Max bandwidth rate allowed on server. Default: 0 (unlimited)
+decalfrequency  Amount of time in seconds a player can spray their decal. Default: 10
+sv_maxupdaterate Maximum updates per second that the server will allow. Default: 60
+sv_minupdaterate Minimum updates per second that the server will allow. Default: 10
+
+ 
+Server logging
+log <on/off> Enable server logging? Default: Off
+sv_logbans <0/1> Log server bans in the server logs. Default: 0
+sv_logecho <0/1> Echo log information to the console. Default: 1
+sv_logfile <0/1> Log server information in the log file. Default: 1
+sv_log_onefile <0/1> Log server information to only one file. Default: 0
+sv_logsdir Folder in the game directory where server logs will be stored.
+ 
+ 
+Bots (1 of 2)
+bot_add 'bot_add' is a value itself. Adding this to your server configuration will enable bots
+bot_quota <1-32> Amount of bots to add. Adding many bots will use more cpu. Start with a few bots, then add more if needed.
+bot_quota_mode <normal/fill> If 'Fill', the server will adjust bots to keep # players in the game, where # is bot_quota (from above) Default: Normal
+bot_difficulty <0/1/2/3> Skill of bots. Values are: 0=easy, 1=normal, 2=hard, 3=expert. Default: 0
+bot_chatter Control how bots talk. Values: 'off', 'radio', 'minimal', or 'normal'. Default: Normal
+bot_auto_follow <0/1> Allow bots to automatically follow a human player. Default: 1
+bot_auto_vacate <0/1> Kick bots to automatically make room for human players. Default: 1
+bot_join_after_player <0/1> Bots must wait for a people to join before joining? If No, bots will play without people. Default: 1
+bot_defer_to_human <0/1> Can bots complete objectives if there are humans on a team? Default: 0
+bot_prefix Prefix for bot names. A prefix is a tag that bots will have in front of their name. you can enter your clan tag or leave blank.
+bot_allow_rogues <0/1> bots may occasionally go 'rogue'. Rogue bots do not obey radio commands, nor pursue scenario goals.. Default: 0
+bot_walk <0/1> The speed at which bots can move. 0=walk+run, 1=walk Default: 0
+bot_join_team <any/T/CT> What teams are bots allowed to join? Default: any
+bot_eco_limit <0-16000> Bots will not buy if their money falls below this amount. Default: 2000
+Bot Weapon Restriction (2 of 2)
+bot_all_weapons Allow bots to use all weapons. 'bot_all_weapons' is the value.
+bot_knives_only Allow bots to use only knives. 'bot_knives_only' is the value.
+bot_pistols_only Allow bots to use only pistols. 'bot_pistols_only' is the value.
+bot_snipers_only Allow bots to use only sniper rifles. 'bot_snipers_only' is the value.
+bot_allow_grenades <0/1> Allow bots to use grenades. Default: 1
+bot_allow_pistols <0/1> Allow bots to use pistols. Default: 1
+bot_allow_sub_machine_guns <0/1> Allow bots to use sub machine guns. Default: 1
+bot_allow_shotguns <0/1> Allow bots to use shotguns. Default: 1
+bot_allow_rifles <0/1> Allow bots to use rifles. Default: 1
+bot_allow_snipers <0/1> Allow bots to use sniper rifles. Default: 1
+bot_allow_machine_guns <0/1> Allow bots to use machine guns. Default: 1
+
+Operation
+sv_lan <0/1> 0=Public/LAN, 1=LAN Default: 0
+sv_region Geographic location of the server.
+255 World
+0 US East coast
+1 US West coast
+2 South America
+3 Europe
+4 Asia
+5 Australia
+6 Middle East
+7 Africa
+sv_contact Contact email for server sysop

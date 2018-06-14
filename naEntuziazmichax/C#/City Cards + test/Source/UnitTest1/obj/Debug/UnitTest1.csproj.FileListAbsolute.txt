@@ -1,0 +1,9 @@
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\obj\Debug\UnitTest1.csprojResolveAssemblyReference.cache
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\UnitTest1.dll
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\UnitTest1.pdb
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\Cards.exe
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\Cards.pdb
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\obj\Debug\UnitTest1.dll
+D:\temp2\Programing\CSHARP\City Cards\UnitTest1\obj\Debug\UnitTest1.pdb

@@ -1,0 +1,5 @@
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Release\Cards.exe.config
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Release\Cards.exe
+D:\temp2\Programing\CSHARP\City Cards\Cards\bin\Release\Cards.pdb
+D:\temp2\Programing\CSHARP\City Cards\Cards\obj\Release\Cards.exe
+D:\temp2\Programing\CSHARP\City Cards\Cards\obj\Release\Cards.pdb

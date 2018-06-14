@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+header {
+    /* background-color: rgba(70, 70, 201, 0.466); */
+    grid-area: header;
+    text-align: center;
+}
+
+header h1 {
+    padding: 0;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    background-color: rgba(139, 139, 139, 0.226);
+    grid-area: aside;
+    justify-self: baseline;
+    align-self: baseline;
+    padding: 10px;
+}
+
+nav {
+    background-color: rgba(127, 128, 127, 0.274);
+    grid-area: nav;
+    justify-self: end;
+}
+
+main {
+    grid-area: main;
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+    align-self: end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: solid 1px rgba(0, 0, 0, 0.33);
+    margin: 15px 0;
+    padding-top: 10px;
+}
+
+footer span {
+    padding: 0 15px;
+    padding: 0 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: "header header header" "nav  main aside" "footer footer footer";
+    grid-template-columns: 1fr calc(205px*3) 1fr;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    justify-content: center;
+}
+
+#img_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 5px;
+}
+
+#img_grid figure {
+    display: flex;
+    position: relative;
+    max-height: 250px;
+    max-width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#img_grid figure:nth-child(4n+2) {
+    grid-column-start: span 2;
+}
+
+#img_grid figure:nth-child(8n+8) {
+    grid-column-start: span 3;
+}
+
+#img_grid figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure:hover::before {
+    content: attr(data-name);
+    background: rgba(100, 100, 100, 0.77);
+    color: #fff;
+    font-size: 1.5em;
+    padding: 5px;
+    height: 30px;
+    position: absolute;
+    top: 70%;
+}
+
+
+.nav {
+    position: sticky;
+    grid-area: nav;
+    justify-self: end;
+    padding: 15px 5px;
+    margin: 0;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.33);
+    align-self: flex-start;
+    min-width: 150px;
+}
+
+.nav:hover {
+    background: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+} 
+
+.nav_bg {
+        position: relative;
+        background-color: rgba(127, 128, 127, 0.274);
+        grid-area: nav;
+        justify-self: end;
+        padding: 15px 5px;
+        margin: 0;
+        min-width: 150px;
+        align-self: stretch; z-index: -1;
+}
+
+
+
+#home:hover ~ #img_grid figure:not(.home),
+#wild:hover ~ #img_grid figure:not(.wild),
+#exotic:hover ~ #img_grid figure:not(.exotic),
+#other:hover ~ #img_grid figure:not(.other) {
+    opacity: 0.2;
+}
+
+aside p {
+    text-transform: uppercase;
+    color: rgb(224, 64, 64);
+    font-weight: 700;
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+}
+
+.rating_list {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+aside label {
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding-right: 20px;
+    font-size: 0.8em;
+}
+
+aside input {
+    position: absolute;
+    left: auto;
+    right: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list span {
+    margin: 5px 0;
+}
+
+.list .caption {
+    width: 100%;
+}
+
+.list .count {
+    font-weight: 700;
+}
+
+.gradient {
+    display: inline-block;
+}
+
+.order_1 .gradient {
+    width: 80%;
+    background: linear-gradient(to right, #2973a4 0%, #FFFFFF 100%);
+}
+
+.order_2 .gradient {
+    width: 20%;
+    background: linear-gradient(to right, #A42929 0%, #FFFFFF 100%);
+}
+
+.order_3 .gradient {
+    width: 80%;
+    background: linear-gradient(to right, #2973a4 0%, #FFFFFF 100%);
+}
+
+.order_4 .gradient {
+    width: 50%;
+    background: linear-gradient(to right, #a49829 0%, #FFFFFF 100%);
+} 
+
+#order:checked + .rating_list .order_1 {
+    order: 1;
+}
+
+#order:checked + .rating_list .order_2 {
+    order: 4;
+}
+
+#order:checked + .rating_list .order_3 {
+    order: 1;
+}
+
+#order:checked + .rating_list .order_4 {
+    order: 2;
+}

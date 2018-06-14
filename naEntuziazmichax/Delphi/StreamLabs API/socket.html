@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js' type='text/javascript'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type = 'text/javascript'>
+  var socketToken = ''; //Socket token from /socket/token end point
+
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+  };
+
+  function settoken(input)
+  {
+  socketToken = input;
+  // console.log(input);
+  connect();
+  }
+  
+  $(document).ready(function(){
+		settoken(getUrlParameter("token"));
+    })
+  
+  
+  function connect() {
+  //Connect to socket
+  const streamlabs = io(`https://sockets.streamlabs.com?token=${socketToken}`);
+  
+	streamlabs.on('connect', function(){
+	  $('<p class="socket" style="display:none;">Socket connected</p>').prependTo(".container").fadeIn('slow');
+	});
+
+	streamlabs.on('disconnect', function(){
+	  $('<p class="socket" style="display:none;">Socket disconnected</p>').prependTo(".container").fadeIn('slow');
+	});
+
+  //Perform Action on event
+  streamlabs.on('event', (eventData) => {
+    if (eventData.type === 'donation') {
+      //code to handle donation events
+      console.log(eventData.message);
+	  $('<p class="new-alert" style="display:none;">'+"New donation. Name:"+eventData.message[0].name+" "+eventData.message[0].amount+" "+eventData.message[0].currency.toLowerCase()+" msg:\""+eventData.message[0].message+"\""+'</p>').prependTo(".container").fadeIn('slow');	  
+	}
+    if (eventData.for === 'twitch_account') {
+      switch(eventData.type) {
+        case 'follow':
+          //code to handle follow events
+          console.log(eventData.message);
+		  $('<p class="new-alert" style="display:none;">'+"New follow. Name:"+eventData.message[0].name+'</p>').prependTo(".container").fadeIn('slow');
+          break;
+        case 'subscription':
+          //code to handle subscription events
+          console.log(eventData.message);
+		  $('<p class="new-alert" style="display:none;">'+"New subscription. Name:"+eventData.message[0].name+'</p>').prependTo(".container").fadeIn('slow');
+          break;
+        default:
+          //default case
+          console.log(eventData.message);
+      }
+    }
+  });
+  }
+</script>
+
+  <style>
+  p {
+    background: #4ff76b;
+	border-radius: 15px;
+	border: 2px solid #4ff76b;
+	padding: 5px;
+  }
+  .socket {
+	background: #ffcda5;
+  }
+  </style>
+  
+</head>
+<body>
+<div class="container">
+</div>
+</body>
+</html>
