@@ -11,41 +11,42 @@
 
 ```
 ├───SomeEducation
-│       ├───Golang
-│       │       ├───dirTree
-│       │       ├───goroutine and chan
-│       │       └───http test server
-│       └───Web
-│               ├───HTML_CSS
-│               │       ├───gallery-only-css
-│               │       └───grid-flex-only-css
-│               ├───JavaScript
-│               │       ├───Objects filter
-│               │       ├───promise
-│               │       └───prototypes
-│               └───Мемори игра
+│	├───Golang
+│	│	├───dirTree
+│	│	├───goroutine and chan
+│	│	└───http test server
+│	├───JavaScript
+│	│	├───Objects filter
+│	│	├───notification emitter
+│	│	├───promise
+│	│	└───prototypes
+│	└───Web
+│		├───HTML_CSS
+│		│	├───gallery-only-css
+│		│	└───grid-flex-only-css
+│		└───Мемори игра
 ├───University
-│       ├───DP
-│       └───С++
-│               ├───MS VisualStudio console
-│               │       ├───1 семестр лабы
-│               │       └───Консольная база данных
-│               ├───Автоматизация для лабораторной
-│               ├───Клиент Сервер
-│               ├───Методы сортировки
-│               └───Практика на 1 курсе RichEdit + Canvas
+│	├───DP
+│	└───С++
+│		├───MS VisualStudio console
+│		│	├───1 семестр лабы
+│		│	└───Консольная база данных
+│		├───Автоматизация для лабораторной
+│		├───Клиент Сервер
+│		├───Методы сортировки
+│		└───Практика на 1 курсе RichEdit + Canvas
 └───naEntuziazmichax
-        ├───Borland С++
-        │       ├───Lineage 2 read mem
-        │       └───SteamServerGames
-        ├───C#
-        │       ├───City Cards + test
-        │       ├───Factorial
-        │       └───NixieClock - ламповые часики
-        ├───Delphi
-        │       └───StreamLabs API
-        ├───Python
-        │       └───NiceHash
-        └───SQL
-                └───First sales
+	├───Borland С++
+	│	├───Lineage 2 read mem
+	│	└───SteamServerGames
+	├───C#
+	│	├───City Cards + test
+	│	├───Factorial
+	│	└───NixieClock - ламповые часики
+	├───Delphi
+	│	└───StreamLabs API
+	├───Python
+	│	└───NiceHash
+	└───SQL
+		└───First sales
 ```
