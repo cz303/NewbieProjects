@@ -1,7 +1,8 @@
 # NewbieProjects
 
 - **SomeEducation** - некоторые выполненные задания с образовательного ресурса
-  - Web - (*HTML, CSS, JavaScript*) 
+  - Web - (*HTML, CSS*) 
+  - JavaScript
   - Golang
 - **University**
   - С++ - Лабораторные работы
