@@ -1,6 +1,6 @@
 # NewbieProjects
 
-- **SomeEducation** - некоторые выполненные задания с образовательного ресурса
+- **SomeEducation** - некоторые выполненные задания с образовательного ресурса и не только
   - Web - (*HTML, CSS*) 
   - JavaScript
   - Golang
@@ -20,7 +20,8 @@
 │	│	├───Objects filter
 │	│	├───notification emitter
 │	│	├───promise
-│	│	└───prototypes
+│	│	├───prototypes
+│	│	└───traders
 │	└───Web
 │		├───HTML_CSS
 │		│	├───gallery-only-css
