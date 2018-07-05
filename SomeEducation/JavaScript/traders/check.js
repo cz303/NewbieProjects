@@ -4,7 +4,7 @@ var Market = require('./traders');
 
 const _TRADERS = 60;
 // const _INCOME_PERIOD = 365;
-const _YEARS = 100;
+const _YEARS = 250;
 
 var traders = [];
 
@@ -72,22 +72,22 @@ function action() {
     for (let index = traders.length * 0.8; index < traders.length; index++) {
             switch (traders[traders.length - index].constructor.name) {
                 case 'Altruist':
-                traders[index] = new Market.Altruist(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Altruist(traders[index].id, 0);
                     break;
                 case 'Scum':
-                traders[index] = new Market.Scum(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Scum(traders[index].id, 0);
                     break;
                 case 'Sharingan':
-                traders[index] = new Market.Sharingan(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Sharingan(traders[index].id, 0);
                     break;
                 case 'Random':
-                traders[index] = new Market.Random(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Random(traders[index].id, 0);
                     break;
                 case 'Fallen':
-                traders[index] = new Market.Fallen(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Fallen(traders[index].id, 0);
                     break;
                 case 'Quirky':
-                traders[index] = new Market.Quirky(traders[index].id, traders[index].adena);
+                traders[index] = new Market.Quirky(traders[index].id, 0);
                     break;
             }
     }
@@ -118,12 +118,12 @@ for (let index = 0; index < _YEARS; index++) {
 
 
 // traders.sort(compareId);
-// traders.forEach(trader => {
-//     console.log(`${trader.id} ${trader.type} $${trader.adena} \t ${trader.income} / ${trader.history.length}`);
-// }); 
+traders.forEach(trader => {
+    console.log(`${trader.id} ${trader.type} $${trader.adena} \t ${trader.income} / ${trader.history.length}`);
+}); 
 
 console.log(statistic[0]);
-console.log(statistic[1]);
+console.log(statistic[Math.round(_YEARS/25)]);
 console.log(statistic[Math.round(_YEARS/10)]);
 console.log(statistic[Math.round(_YEARS/5)]);
 console.log(statistic[_YEARS-1]);
