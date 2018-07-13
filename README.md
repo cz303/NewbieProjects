@@ -1,6 +1,7 @@
 # NewbieProjects
 
-- **SomeEducation** - некоторые выполненные задания с образовательного ресурса и не только
+- **Tests** - тестовые задания от работодалетей
+- **SomeEducation** - некоторые выполненные задания с образовательного ресурса
   - Web - (*HTML, CSS*) 
   - JavaScript
   - Golang
@@ -8,7 +9,7 @@
   - С++ - Лабораторные работы
   - DP - (*php, mysql, andoid/java*) проектная часть дипломной работы
 - **naEntuziazmichax** - Энтузиазм
-  - *С++, C#, Delphi, Python, SQL*
+  - *С++, C#, Delphi, Python*
 
 ```
 ├───SomeEducation
@@ -20,13 +21,20 @@
 │       │       ├───Objects filter
 │       │       ├───notification emitter
 │       │       ├───promise
-│       │       ├───prototypes
-│       │       └───traders
+│       │       └───prototypes
 │       └───Web
 │               ├───HTML_CSS
 │               │       ├───gallery-only-css
 │               │       └───grid-flex-only-css
 │               └───Мемори игра
+├───Tests
+│       ├───JavaScript
+│       │       └───traders
+│       ├───SQL
+│       │       └───First sales
+│       └───С#
+│               ├───City Cards + test
+│               └───Factorial
 ├───University
 │       ├───DP
 │       └───С++
@@ -39,13 +47,9 @@
         ├───Borland С++
         │       └───Lineage 2 read mem
         ├───C#
-        │       ├───City Cards + test
-        │       ├───Factorial
         │       └───NixieClock - ламповые часики
         ├───Delphi
         │       └───StreamLabs API
-        ├───Python
-        │       └───NiceHash
-        └───SQL
-                └───First sales
+        └───Python
+                └───NiceHash
 ```
