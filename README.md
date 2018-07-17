@@ -31,7 +31,7 @@
 │       ├───JavaScript
 │       │       └───traders
 │       ├───ReactJS
-│       │       └───UsersTable
+│       │       └───Table
 │       ├───SQL
 │       │       └───First sales
 │       └───С#
