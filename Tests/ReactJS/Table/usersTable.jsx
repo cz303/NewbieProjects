@@ -7,7 +7,7 @@ export class Users extends React.Component {
       error: null,
       users: [],
       page: 1,
-      rowPerPage: 15,
+      rowPerPage: 10,
       selected: null,
       filtering: false,
       originalUsers: [],
@@ -499,7 +499,7 @@ class Search extends React.Component {
         let index = obj[key].toString().indexOf(search);
         if (index > -1) {
           let regex = new RegExp("([^| ])*" + search + "*([^| ]+)", "i");
-          let substr = obj[key].match(regex)[0];
+          let substr = obj[key].toString().match(regex)[0];
           if (!originalObj.hasOwnProperty("___found"))
             originalObj.___found = [];
           originalObj.___found.push({

@@ -228,6 +228,7 @@ button:focus
 
 .tooltiptext b {
 	font-style: italic;
+	color: rgb(255, 164, 164);
 }
 
 .tooltiptext::after {
