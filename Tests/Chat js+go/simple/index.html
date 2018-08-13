@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/all.css">
+    <script src="./js/chat.js" defer></script>
+    <title>Chat</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- 
+        page="login"
+        page="chat" 
+        -->
+        <div class="gradient">
+            <div id="chat" data-page="login">
+                <div class="header">
+                    <span id="back" title="Logout">
+                        <i class="fas fa-caret-left"></i>
+                    </span>
+                    <span>Тестовое задание</span>
+                    <span id="menu" title="Clear local storage">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                </div>
+                <div id="user_login">
+                    <div class="logo">
+                        <div class="name">Chat</div>
+                        <img src="imgs/Icon.png" alt="" srcset="">
+                    </div>
+                    <form action="" id="login">
+                        <label for="login" class="field_name">Username</label>
+                        <input type="text" name="login" placeholder="unnamed" id="username" required/>
+                        <button type="submit">
+                            <span id="triangle"></span>
+                            <span class="caption">Get Started</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="message" id="example">
+                    <div class="messageBox" data-from="leporel" data-style="self">
+                        <div class="avatar" title="leporel">
+                            <img src="./imgs/defaultUser.png">
+                        </div>
+                        <div class="message_text">
+                            <span class="mText">Tes asd dasasdasdadsadasadasdasdasdasdasdasddsfdsfsdf</span>
+                            <span class="mTime">5 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="chat_page">
+                    <div class="message" id="m1">
+                        <div class="time">
+                            <i class="fas fa-clock"></i>
+                            <span>Today at 10:45AM</span>
+                        </div>
+                    </div>
+                    <div class="message" id="m3">
+                        <div class="messageBox" data-from="Test" data-style="comrade">
+                            <div class="avatar" title="Test">
+                                <img src="./imgs/defaultUser.png">
+                            </div>
+                            <div class="message_text">
+                                <span class="mText">Чтобы написать сообщение от меня - префикс !test</span>
+                                <span class="mTime">Test</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <form action="" id="send">
+                        <label for="message" class="upload">
+                            <i class="fas fa-camera"></i>
+                        </label>
+                        <textarea name="message" type="text" placeholder="Type message. . ."></textarea>
+                        <button type="submit" title="Send">
+                            <span class="fas fa-paper-plane"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

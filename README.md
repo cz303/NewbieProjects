@@ -28,6 +28,9 @@
 │               │       └───grid-flex-only-css
 │               └───Мемори игра
 ├───Tests
+│       ├───Chat js+go
+│       │       ├───simple
+│       │       └───tryhard
 │       ├───JavaScript
 │       │       └───traders
 │       ├───ReactJS
