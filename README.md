@@ -14,19 +14,7 @@
 ```
 ├───SomeEducation
 │       ├───Golang
-│       │       ├───dirTree
-│       │       ├───goroutine and chan
-│       │       └───http test server
-│       ├───JavaScript
-│       │       ├───Objects filter
-│       │       ├───notification emitter
-│       │       ├───promise
-│       │       └───prototypes
-│       └───Web
-│               ├───HTML_CSS
-│               │       ├───gallery-only-css
-│               │       └───grid-flex-only-css
-│               └───Мемори игра
+│       └───JavaScript+Web
 ├───Tests
 │       ├───Chat js+go
 │       │       ├───simple
