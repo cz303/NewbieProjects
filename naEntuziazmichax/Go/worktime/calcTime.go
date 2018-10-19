@@ -59,7 +59,7 @@ func main() {
 	}
 
 	if diffReal.Minutes() > 480 {
-		fmt.Println(", yay, go home! ")
+		fmt.Println("yay, go home! ")
 	} else {
 		fmt.Printf(" work more! at least %v\n", re.FindAllStringSubmatch(diffRemain.String(), 1)[0][0])
 		endTime := time.Now().Local().Add(diffRemain)
